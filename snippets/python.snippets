@@ -106,7 +106,7 @@ snippet ei
 	elif ${1:condition}:
 		${0:${VISUAL}}
 # For
-snippet for
+snippet fe
 	for ${1:item} in ${2:items}:
 		${0}
 # Encodes
@@ -454,3 +454,10 @@ snippet numeric "methods for emulating a numeric type" b
 	def __coerce__(self, other):
 		${25:pass}
 
+snippet out
+	print(${0})
+snippet me
+	def ${1:fname}(${2:`indent('.') ? 'self' : ''`}):
+		${0:pass}
+snippet re
+	return 
